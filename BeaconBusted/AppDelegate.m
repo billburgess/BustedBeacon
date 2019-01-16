@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	// Override point for customization after application launch.
+	
+	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	
+	ViewController *vc = [[ViewController alloc] initWithStyle:UITableViewStyleGrouped];
+	self.window.rootViewController = vc;
+	[self.window makeKeyAndVisible];
+	
 	return YES;
 }
 
@@ -47,5 +55,47 @@
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"localNotificationRegistration" object:nil];
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+	NSString *token = [deviceToken description];
+	token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
+	token = [token stringByReplacingOccurrencesOfString:@"<" withString:@""];
+	token = [token stringByReplacingOccurrencesOfString:@">" withString:@""];
+	
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"deviceRegistration" object:token];
+	});
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+#if !(TARGET_OS_SIMULATOR)
+	//running on device
+	
+	// notify views that registration is complete without token
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"deviceRegistration" object:nil];
+	});
+#else
+	// running in Simulator, use bogus token/device
+	NSLog(@"Simulator returning bogus device token");
+	
+	NSString *token = @"f0614576b28f9a1aba6b2497a4b15603d8a88965a717d073cf462633b5beb15f";
+	// notify views that registration is complete
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[[NSNotificationCenter defaultCenter] postNotificationName:@"deviceRegistration" object:token];
+	});
+#endif
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+	NSLog(@"AppDelegate: didReceiveLocalNotification: %@", notification.alertBody);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+	NSLog(@"AppDelegate: didReceiveRemoteNotification:");
+}
 
 @end

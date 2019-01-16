@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		BA5FB27A21EF91D000923E82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5FB27921EF91D000923E82 /* AppDelegate.m */; };
 		BA5FB27D21EF91D000923E82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5FB27C21EF91D000923E82 /* ViewController.m */; };
-		BA5FB28021EF91D000923E82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5FB27E21EF91D000923E82 /* Main.storyboard */; };
 		BA5FB28221EF91D300923E82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5FB28121EF91D300923E82 /* Assets.xcassets */; };
-		BA5FB28521EF91D300923E82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5FB28321EF91D300923E82 /* LaunchScreen.storyboard */; };
 		BA5FB28821EF91D300923E82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5FB28721EF91D300923E82 /* main.m */; };
 		BA5FB29221EF91D400923E82 /* BeaconBustedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA5FB29121EF91D400923E82 /* BeaconBustedTests.m */; };
+		BA5FB29D21EF944600923E82 /* Launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA5FB29C21EF944600923E82 /* Launch.xib */; };
+		BA5FB29F21EF948A00923E82 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA5FB29E21EF948A00923E82 /* MainWindow.xib */; };
+		BAED38C821EF9D8A00A5F0C7 /* LocationManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAED38C721EF9D8A00A5F0C7 /* LocationManagerController.m */; };
+		BAED38CB21EFA95600A5F0C7 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAED38CA21EFA95600A5F0C7 /* NotificationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,19 @@
 		BA5FB27921EF91D000923E82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BA5FB27B21EF91D000923E82 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BA5FB27C21EF91D000923E82 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BA5FB27F21EF91D000923E82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA5FB28121EF91D300923E82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BA5FB28421EF91D300923E82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA5FB28621EF91D300923E82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA5FB28721EF91D300923E82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA5FB28D21EF91D400923E82 /* BeaconBustedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconBustedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5FB29121EF91D400923E82 /* BeaconBustedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconBustedTests.m; sourceTree = "<group>"; };
 		BA5FB29321EF91D400923E82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA5FB29C21EF944600923E82 /* Launch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Launch.xib; sourceTree = "<group>"; };
+		BA5FB29E21EF948A00923E82 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		BA5FB2A021EF979300923E82 /* BeaconBusted.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeaconBusted.entitlements; sourceTree = "<group>"; };
+		BAED38C621EF9D8A00A5F0C7 /* LocationManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManagerController.h; sourceTree = "<group>"; };
+		BAED38C721EF9D8A00A5F0C7 /* LocationManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManagerController.m; sourceTree = "<group>"; };
+		BAED38C921EFA95600A5F0C7 /* NotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		BAED38CA21EFA95600A5F0C7 /* NotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +88,18 @@
 		BA5FB27721EF91D000923E82 /* BeaconBusted */ = {
 			isa = PBXGroup;
 			children = (
+				BA5FB2A021EF979300923E82 /* BeaconBusted.entitlements */,
 				BA5FB27821EF91D000923E82 /* AppDelegate.h */,
 				BA5FB27921EF91D000923E82 /* AppDelegate.m */,
+				BA5FB29C21EF944600923E82 /* Launch.xib */,
+				BA5FB29E21EF948A00923E82 /* MainWindow.xib */,
 				BA5FB27B21EF91D000923E82 /* ViewController.h */,
 				BA5FB27C21EF91D000923E82 /* ViewController.m */,
-				BA5FB27E21EF91D000923E82 /* Main.storyboard */,
+				BAED38C621EF9D8A00A5F0C7 /* LocationManagerController.h */,
+				BAED38C721EF9D8A00A5F0C7 /* LocationManagerController.m */,
+				BAED38C921EFA95600A5F0C7 /* NotificationController.h */,
+				BAED38CA21EFA95600A5F0C7 /* NotificationController.m */,
 				BA5FB28121EF91D300923E82 /* Assets.xcassets */,
-				BA5FB28321EF91D300923E82 /* LaunchScreen.storyboard */,
 				BA5FB28621EF91D300923E82 /* Info.plist */,
 				BA5FB28721EF91D300923E82 /* main.m */,
 			);
@@ -152,6 +164,14 @@
 				TargetAttributes = {
 					BA5FB27421EF91D000923E82 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					BA5FB28C21EF91D400923E82 = {
 						CreatedOnToolsVersion = 10.1;
@@ -183,9 +203,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA5FB28521EF91D300923E82 /* LaunchScreen.storyboard in Resources */,
+				BA5FB29D21EF944600923E82 /* Launch.xib in Resources */,
 				BA5FB28221EF91D300923E82 /* Assets.xcassets in Resources */,
-				BA5FB28021EF91D000923E82 /* Main.storyboard in Resources */,
+				BA5FB29F21EF948A00923E82 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,8 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAED38CB21EFA95600A5F0C7 /* NotificationController.m in Sources */,
 				BA5FB27D21EF91D000923E82 /* ViewController.m in Sources */,
 				BA5FB28821EF91D300923E82 /* main.m in Sources */,
+				BAED38C821EF9D8A00A5F0C7 /* LocationManagerController.m in Sources */,
 				BA5FB27A21EF91D000923E82 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,25 +248,6 @@
 			targetProxy = BA5FB28E21EF91D400923E82 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		BA5FB27E21EF91D000923E82 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA5FB27F21EF91D000923E82 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BA5FB28321EF91D300923E82 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA5FB28421EF91D300923E82 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BA5FB29421EF91D400923E82 /* Debug */ = {
@@ -298,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -351,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -363,9 +366,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BeaconBusted/BeaconBusted.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R536BS52FG;
 				INFOPLIST_FILE = BeaconBusted/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,9 +385,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BeaconBusted/BeaconBusted.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R536BS52FG;
 				INFOPLIST_FILE = BeaconBusted/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NotificationController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UITableViewController
 
+@property (nonatomic, strong) NotificationController *nc;
 
 @end
 
