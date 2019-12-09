@@ -22,6 +22,6 @@ typedef void(^ _Nullable NotificationRequestCompletionHandler)(NotificationCompl
 - (void)registerForLocalNotifications:(NotificationRequestCompletionHandler)completionHandler;
 - (void)unregisterForPushNotifications:(NotificationRequestCompletionHandler)completionHandler;
 
-+ (void)presentLocalNotification:(UILocalNotification *)notification;
++ (void)presentLocalNotification:(UILocalNotification *_Nonnull)notification;
 
 @end
